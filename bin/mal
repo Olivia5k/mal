@@ -1,7 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
 if __name__ == "__main__":
-    from mal import mal
-    mal.main()
+    import sys
+    import os
+
+    root = os.path.dirname(os.path.dirname(sys.argv[0]))
+    module = os.path.join(root, 'mal')
+
+    if os.path.isdir(module):
+        sys.path.insert(0, root)
+
+    from mal.__main__ import main
+    main()

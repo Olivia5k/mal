@@ -9,9 +9,6 @@ setup(
     description=('GitHub in your terminal'),
     license='MIT',
     packages=['mal'],
-    install_requires=[
-        'requests==2.0.1'
-    ],
     scripts=[
         'bin/mal'
     ],
