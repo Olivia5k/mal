@@ -1,8 +1,10 @@
 from distutils.core import setup
 
+from mal import __version__
+
 setup(
     name='mal',
-    version='0.0.1',
+    version=__version__.version,
     url='https://github.com/thiderman/mal',
     author='Lowe Thiderman',
     author_email='lowe.thiderman@gmail.com',
